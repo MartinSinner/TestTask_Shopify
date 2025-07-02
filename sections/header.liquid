@@ -172,7 +172,7 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <img src="{{ 'logo-sinner.svg' | asset_url }}" alt="{{ shop.name }}" class="header__custom-logo" width="200" height="50" style="max-height: 50px; width: auto;">
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}

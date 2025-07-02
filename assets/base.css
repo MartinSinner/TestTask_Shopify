@@ -100,6 +100,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   padding-right: 3rem;
 }
 
+h2 img {
+  width: 50px;
+  height: auto;
+}
+
 @media screen and (min-width: 750px) {
   .page-width {
     padding: 0 5rem;
@@ -147,7 +152,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .section + .section {
-  margin-top: var(--spacing-sections-mobile);
+  display: none;
 }
 
 @media screen and (min-width: 750px) {

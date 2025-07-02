@@ -1,0 +1,104 @@
+/* Header Layout: Logo Links, Navigation Mitte, Icons Rechts */
+.header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/* Logo Links */
+.header__heading,
+.header__heading-link {
+  flex: 0 0 auto;
+  order: 1;
+}
+
+.header__heading-logo-wrapper {
+  max-width: 150px;
+}
+
+/* Navigation Mitte */
+.header__inline-menu {
+  flex: 1;
+  display: flex !important;
+  justify-content: center !important;
+  order: 2;
+}
+
+.list-menu--inline {
+  justify-content: center !important;
+  gap: 2rem;
+}
+
+.list-menu__item--link {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500 !important;
+  color: #333333 !important;
+  text-decoration: none !important;
+  font-size: 16px !important;
+  transition: color 0.2s ease !important;
+}
+
+.list-menu__item--link:hover {
+  color: #5f3ffc !important;
+}
+
+/* Icons Rechts */
+.header__icons {
+  flex: 0 0 auto;
+  order: 3;
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+}
+
+.header__icon {
+  color: #333333 !important;
+  transition: color 0.2s ease !important;
+}
+
+.header__icon:hover {
+  color: #5f3ffc !important;
+}
+
+.header__custom-logo {
+    max-height: 50px;
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Header Drawer für Mobile verstecken auf Desktop */
+@media screen and (min-width: 990px) {
+  header-drawer {
+    display: none !important;
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 989px) {
+  .header__inline-menu {
+    display: none !important;
+  }
+  
+  header-drawer {
+    display: block !important;
+  }
+}
+
+/* Warenkorb Count Styling */
+.cart-count-bubble {
+  background: #5f3ffc !important;
+  color: white !important;
+  border-radius: 50% !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+}
+
+/* Header Wrapper */
+.header-wrapper {
+  border-bottom: 1px solid #e5e5e5 !important;
+}
