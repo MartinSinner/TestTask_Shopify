@@ -153,6 +153,28 @@ cart-items {
 
 .cart__ctas button {
   width: 100%;
+  background-color: #5f3ffc;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  height: 52px;
+  --buttons-border-offset: 0;
+  --buttons-border-opacity: 0;
+  --buttons-radius-outset: 0;
+}
+
+.cart__ctas button:hover {
+background-color: #684df1;
+  height: 52px;
+  box-shadow: 0 4px 12px rgba(31, 71, 255, 0.25);
+  border: none !important;
+  outline: none !important;
+  border-radius: 8px !important;
+  --buttons-border-offset: 0;
+  --buttons-border-opacity: 0;
+  --buttons-radius-outset: 0; 
 }
 
 .cart__ctas > * + * {

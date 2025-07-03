@@ -14,6 +14,40 @@
   margin-bottom: 1.5rem;
 }
 
+.contact h2 {
+  color: #595b5e;
+}
+
+.contact__button button {
+  background-color: #5f3ffc;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  transform: translateY(0);
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  height: 52px;
+  --buttons-border-offset: 0;
+  --buttons-border-opacity: 0;
+  --buttons-radius-outset: 0;
+}
+
+.contact__button button:hover {
+  background-color: #684df1;
+  transform: translateY(-1px); 
+  box-shadow: 0 4px 12px rgba(31, 71, 255, 0.25);
+  border: none !important;
+  outline: none !important;
+  border-radius: 8px !important;
+  --buttons-border-offset: 0;
+  --buttons-border-opacity: 0;
+  --buttons-radius-outset: 0; 
+}
+
+label {
+  font-family: 'Montserrat', sans-serif;
+  }
+
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;

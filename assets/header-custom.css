@@ -8,18 +8,39 @@
   padding-bottom: 10px !important;
 }
 
-/* Logo Links */
+
 .header__heading,
 .header__heading-link {
-  flex: 0 0 auto;
-  order: 1;
+  order: 1 !important;
+  margin-right: auto !important;
 }
 
-.header__heading-logo-wrapper {
-  max-width: 150px;
+
+.header__icons {
+  order: 3 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
 }
 
-/* Navigation Mitte */
+
+.header__custom-logo {
+  max-height: 50px;
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.header__icon--account,
+.header__search,
+.desktop-localization-wrapper,
+details#Details-HeaderSearch-modal {
+  display: none !important;
+}
+
+
 .header__inline-menu {
   flex: 1;
   display: flex !important;
@@ -27,10 +48,12 @@
   order: 2;
 }
 
+
 .list-menu--inline {
   justify-content: center !important;
   gap: 2rem;
 }
+
 
 .list-menu__item--link {
   font-family: 'Montserrat', sans-serif !important;
@@ -41,53 +64,31 @@
   transition: color 0.2s ease !important;
 }
 
+
 .list-menu__item--link:hover {
   color: #5f3ffc !important;
 }
 
-/* Icons Rechts */
-.header__icons {
-  flex: 0 0 auto;
-  order: 3;
-  display: flex !important;
-  align-items: center !important;
-  gap: 1rem !important;
-}
 
 .header__icon {
   color: #333333 !important;
   transition: color 0.2s ease !important;
 }
 
+
 .header__icon:hover {
   color: #5f3ffc !important;
 }
 
+
 .header__custom-logo {
-    max-height: 50px;
-    width: auto;
-    max-width: 200px;
-    height: auto;
-    object-fit: contain;
+  max-height: 50px;
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
 }
 
-/* Header Drawer für Mobile verstecken auf Desktop */
-@media screen and (min-width: 990px) {
-  header-drawer {
-    display: none !important;
-  }
-}
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 989px) {
-  .header__inline-menu {
-    display: none !important;
-  }
-  
-  header-drawer {
-    display: block !important;
-  }
-}
 
 /* Warenkorb Count Styling */
 .cart-count-bubble {
@@ -98,7 +99,25 @@
   font-size: 12px !important;
 }
 
-/* Header Wrapper */
-.header-wrapper {
-  border-bottom: 1px solid #e5e5e5 !important;
+
+/*Responsive*/
+@media screen and (min-width: 990px) {
+  header-drawer {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .header__inline-menu {
+    display: none !important;
+  }
+
+  .header__icons {
+    order: 0 !important;
+    margin-right: 16px;
+  }
+
+  header {
+    flex-direction: row-reverse;
+  }
 }

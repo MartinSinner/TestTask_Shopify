@@ -76,9 +76,9 @@
 
       <div class="price-section">
         {% if product.compare_at_price > product.price %}
-          <span class="old-price">{{ product.compare_at_price | money }}</span>
+          <span class="old-price">{{ product.compare_at_price | money_without_currency }}€</span>
         {% endif %}
-        <span class="current-price">{{ product.price | money }}</span>
+        <span class="current-price">{{ product.price | money_without_currency }}€</span>
         <span class="tax-info">inkl. MwSt</span>
       </div>
 
@@ -99,9 +99,7 @@
 <div class="product-features">
   <div class="feature-item">
     <div class="feature-icon">
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-        <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#6B7280" stroke-width="2"/>
-      </svg>
+      <img src="{{ 'feature1.png' | asset_url }}" alt="Sanft zur Haut" class="feature-image" width="40" height="40">
     </div>
     <div class="feature-content">
       <h3>Sanft zur Haut</h3>
@@ -111,9 +109,7 @@
 
   <div class="feature-item">
     <div class="feature-icon">
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-        <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#6B7280" stroke-width="2"/>
-      </svg>
+      <img src="{{ 'feature2.png' | asset_url }}" alt="Sanft zur Haut" class="feature-image" width="40" height="40">
     </div>
     <div class="feature-content">
       <h3>Robustes Silikon</h3>
@@ -123,9 +119,7 @@
 
   <div class="feature-item">
     <div class="feature-icon">
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-        <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#6B7280" stroke-width="2"/>
-      </svg>
+      <img src="{{ 'feature3.png' | asset_url }}" alt="Sanft zur Haut" class="feature-image" width="40" height="40">
     </div>
     <div class="feature-content">
       <h3>Fester Sitz</h3>

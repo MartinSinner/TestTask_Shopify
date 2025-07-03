@@ -75,6 +75,32 @@
 }
 
 /* base */
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5f3ffc; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #684df1; 
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: #5f3ffc #f1f1f1; 
+}
+
+.header__menu-item span:hover {
+  color: #684df1;
+}
 
 .page-width {
   max-width: var(--page-width);

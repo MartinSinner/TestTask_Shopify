@@ -238,13 +238,14 @@
     width: 60px;
     height: 60px;
     background-color: #f8f9fa;
+    border: solid 2px #9ea2ad;
     border-radius: 50%;
     flex-shrink: 0;
 }
 
-.feature-icon svg {
-    width: 40px;
-    height: 40px;
+.feature-icon img {
+    width: 70px;
+    height: 70px;
 }
 
 .feature-content h3 {
