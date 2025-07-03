@@ -11,6 +11,40 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "newsletter_q6wjw7": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_kgci3Q": {
+          "type": "heading",
+          "settings": {
+            "heading": "Exklusiv. Vor allen anderen.",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_Yh86Q7": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p><br/>Keine Spam, nur echte Vorteile: Early Access, Angebote & Produktneuheiten.<br/><br/></p>"
+          }
+        },
+        "email_form_HULhrD": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_kgci3Q",
+        "paragraph_Yh86Q7",
+        "email_form_HULhrD"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 96
+      }
+    },
     "footer": {
       "type": "footer",
       "settings": {
@@ -30,6 +64,7 @@
     }
   },
   "order": [
+    "newsletter_q6wjw7",
     "footer"
   ]
 }
