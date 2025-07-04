@@ -67,7 +67,10 @@ function initLightbox() {
   setupOutsideClickClose(lightbox);
 }
 
-
+/**
+ * Initializes the carousel inside the lightbox
+ * Configures Flickity with optimal settings for fullscreen image viewing
+ */
 function initLightboxCarousel() {
   const flickityLightbox = new Flickity('.lightbox-carousel', {
     cellAlign: 'center',

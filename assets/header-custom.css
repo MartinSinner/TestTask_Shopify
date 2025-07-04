@@ -1,4 +1,9 @@
-/* Header Layout: Logo Links, Navigation Mitte, Icons Rechts */
+/* 
+----------------------------------------
+   BASIC HEADER LAYOUT
+   Main container and positioning
+----------------------------------------
+*/
 .header {
   display: flex !important;
   align-items: center !important;
@@ -8,13 +13,11 @@
   padding-bottom: 10px !important;
 }
 
-
 .header__heading,
 .header__heading-link {
   order: 1 !important;
   margin-right: auto !important;
 }
-
 
 .header__icons {
   order: 3 !important;
@@ -24,6 +27,11 @@
 }
 
 
+/* 
+----------------------------------------
+   LOGO STYLING
+----------------------------------------
+*/
 .header__custom-logo {
   max-height: 50px;
   width: auto;
@@ -33,6 +41,12 @@
 }
 
 
+/* 
+----------------------------------------
+   ELEMENT VISIBILITY
+   Hide specific header elements
+----------------------------------------
+*/
 .header__icon--account,
 .header__search,
 .desktop-localization-wrapper,
@@ -41,6 +55,12 @@ details#Details-HeaderSearch-modal {
 }
 
 
+/* 
+----------------------------------------
+   NAVIGATION MENU
+   Main navigation styling and positioning
+----------------------------------------
+*/
 .header__inline-menu {
   flex: 1;
   display: flex !important;
@@ -48,12 +68,10 @@ details#Details-HeaderSearch-modal {
   order: 2;
 }
 
-
 .list-menu--inline {
   justify-content: center !important;
   gap: 2rem;
 }
-
 
 .list-menu__item--link {
   font-family: 'Montserrat', sans-serif !important;
@@ -70,27 +88,21 @@ details#Details-HeaderSearch-modal {
 }
 
 
+/* 
+----------------------------------------
+   ICON STYLING
+   Cart and other header icons
+----------------------------------------
+*/
 .header__icon {
   color: #333333 !important;
   transition: color 0.2s ease !important;
 }
 
-
 .header__icon:hover {
   color: #5f3ffc !important;
 }
 
-
-.header__custom-logo {
-  max-height: 50px;
-  width: auto;
-  max-width: 200px;
-  height: auto;
-  object-fit: contain;
-}
-
-
-/* Warenkorb Count Styling */
 .cart-count-bubble {
   background: #5f3ffc !important;
   color: white !important;
@@ -100,12 +112,18 @@ details#Details-HeaderSearch-modal {
 }
 
 
-/*Responsive*/
+/* 
+----------------------------------------
+   RESPONSIVE ADJUSTMENTS
+   Mobile and desktop specific styling
+----------------------------------------
+*/
 @media screen and (min-width: 990px) {
   header-drawer {
     display: none !important;
   }
 }
+
 
 @media screen and (max-width: 989px) {
   .header__inline-menu {

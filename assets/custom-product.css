@@ -1,3 +1,9 @@
+/* 
+----------------------------------------
+   PRODUCT GRID LAYOUT
+   Main container and overall structure
+----------------------------------------
+*/
 .product-grid {
     display: flex;
     gap: 28px;
@@ -7,6 +13,13 @@
     padding: 44px 12px;
 }
 
+
+/* 
+----------------------------------------
+   THUMBNAIL GALLERY
+   Sidebar thumbnails and overlay styling
+----------------------------------------
+*/
 .product-grid__gallery {
     display: flex;
     flex-direction: column;
@@ -35,7 +48,6 @@
 
 .gallery-overlay {
     position: absolute;
-    background: url();
     top: 50;
     left: 0;
     width: 100%;
@@ -55,10 +67,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.gallery-overlay:hover {
-    background: rgba(0, 0, 0, 0.7);
-}
 
+/* 
+----------------------------------------
+   MAIN PRODUCT IMAGE
+   Primary product display area
+----------------------------------------
+*/
 .product-grid__main-image {
     flex: 1;
     max-width: 500px;
@@ -69,7 +84,13 @@
     height: auto;
 }
 
-/*Flickity*/
+
+/* 
+----------------------------------------
+   FLICKITY CAROUSEL CUSTOMIZATION
+   Main image carousel controls
+----------------------------------------
+*/
 .main-carousel {
   width: 100%;
   max-width: 500px;
@@ -83,6 +104,7 @@
   position: absolute;
 }
 
+/* Button positioning and styling */
 .flickity-button.previous {
   left: 50%;
   transform: translateX(-110%);
@@ -93,18 +115,13 @@
   transform: translateX(10%);
 }
 
-.carousel-cell {
-  width: 100%;
-  flex-shrink: 0;
-}
 
-.carousel-cell img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-
+/* 
+----------------------------------------
+   PRODUCT INFORMATION PANEL
+   Product details, pricing, and buy button
+----------------------------------------
+*/
 .product-grid__info {
     background: #ffffff;
     width: 475px;
@@ -214,7 +231,12 @@
 }
 
 
-/* Features Container */
+/* 
+----------------------------------------
+   PRODUCT FEATURES SECTION
+   Feature highlights with icons
+----------------------------------------
+*/
 .product-features {
     display: flex;
     justify-content: space-evenly;
@@ -264,8 +286,12 @@
 }
 
 
-/*Overlay Lightbox*/
-
+/* 
+----------------------------------------
+   LIGHTBOX GALLERY
+   Fullscreen image viewer styling
+----------------------------------------
+*/
 body.lightbox-open {
   overflow: hidden;
   position: fixed;
@@ -303,7 +329,6 @@ body.lightbox-open {
   cursor: pointer;
 }
 
-
 .lightbox-carousel .flickity-button {
   top: 50%;
   transform: translateY(-50%);
@@ -329,17 +354,18 @@ body.lightbox-open {
   left: auto;
 }
 
-
-/* Footer Trennlinie entfernen */
-
-
 /*footer*/
 .footer {
     display: none;
 }
 
-/* Responsive Design */
 
+/* 
+----------------------------------------
+   RESPONSIVE DESIGN
+   Mobile and tablet adaptations
+----------------------------------------
+*/
 @media (max-width: 1024px) {
     .product-grid {
         gap: 20px;
@@ -356,6 +382,7 @@ body.lightbox-open {
         max-width: 400px;
     }
 }
+
 
 @media (max-width: 875px) {
     .product-grid {
@@ -409,16 +436,8 @@ body.lightbox-open {
         width: 60px;
         height: 60px;
     }
-
-    /* .buy-button {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        border-radius: 0;
-        z-index: 100;
-    } */
 }
+
 
 @media (max-width: 480px) {
     .product-grid__info h1 {
@@ -433,6 +452,7 @@ body.lightbox-open {
         margin-bottom: 1rem;
     }
 }
+
 
 @media(max-width: 356px) {
     .product-grid__info {

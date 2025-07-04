@@ -13,6 +13,7 @@
       rel="stylesheet"
     >
 
+    <!-- Custom Flickity Carousel Implementation -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     {%- if settings.favicon != blank -%}
@@ -42,7 +43,7 @@
     <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
-
+    <!-- Custom Product Gallery JavaScript -->
     <script src="{{ 'product-gallery.js' | asset_url }}" defer="defer"></script>
 
     {%- if settings.animations_reveal_on_scroll -%}
@@ -271,6 +272,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    <!-- Custom CSS Files -->
     {{ 'custom-product.css' | asset_url | stylesheet_tag }}
     {{ 'header-custom.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -391,6 +393,7 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    <!-- Custom Flickity Carousel Implementation -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer="defer"></script>
   </body>
 </html>
