@@ -365,7 +365,7 @@ body.lightbox-open {
     }
 
     .product-grid__gallery {
-        display: none; 
+        display: none; /* Thumbnails auf Mobilgeräten ausblenden */
     }
     .product-grid__main-image {
         width: 100%;
@@ -388,25 +388,18 @@ body.lightbox-open {
 
     .product-features {
         flex-direction: column;
-        align-items: center;
         gap: 1.5rem;
     }
 
     .feature-item {
-        width: 275px;
-        display: flex;
-        justify-content: flex-start;
+        width: 100%;
+        justify-content: center;
         margin-bottom: 15px;
     }
 
     .feature-icon {
         width: 50px;
         height: 50px;
-    }
-
-    .feature-icon img {
-        width: 60px;
-        height: 60px;
     }
 
     /* .buy-button {

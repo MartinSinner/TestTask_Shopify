@@ -151,36 +151,6 @@ cart-items {
   }
 }
 
-.button-back a {
-  color: white;
-  
-}
-.button-back {
-  background-color: #5f3ffc;
-  border-radius: 4px;
-  padding: 14px 24px;
-  color: white;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  height: 52px;
-  --border-offset: 0;
-  --border-opacity: 0;
-}
-
-.button-back:hover {
-  background-color: #684df1;
-  height: 52px;
-  box-shadow: 0 4px 12px rgba(31, 71, 255, 0.25);
-  border: none !important;
-  outline: none !important;
-  border-radius: 4px !important;
-  --border-offset: 0;
-  --border-opacity: 0 !important;
-}
-
 .cart__ctas button {
   width: 100%;
   background-color: #5f3ffc;
@@ -195,7 +165,7 @@ cart-items {
   --buttons-radius-outset: 0;
 }
 
-.cart__ctas button:hover  {
+.cart__ctas button:hover {
 background-color: #684df1;
   height: 52px;
   box-shadow: 0 4px 12px rgba(31, 71, 255, 0.25);
